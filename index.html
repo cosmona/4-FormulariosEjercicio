@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML 1</title>
+  </head>
+
+  <body>
+    <header><h1>Formularios</h1></header>
+    <main>
+      <section>
+        <header><h2>Datos Personales</h2></header>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="idName">Nombre:</label>
+            <input type="text" name="nameText" id="idName" autofocus required />
+
+            <label for="idEmail">Correo electronico:</label>
+            <input type="email" name="nameEmail" id="idEmail" required />
+
+            <label for="idUrl">Url:</label>
+            <input
+              type="url"
+              name="nameUrl"
+              id="idUrl"
+              placeholder="Escribe la URL de tu página web personal"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Fechas</legend>
+            <label for="idDate">Fecha</label>
+            <input type="date" name="nameDate" id="idDate" />
+
+            <label for="idTime">Tiempo</label>
+            <input type="time" name="nameTime" id="idTime" />
+
+            <label for="idDatetime">Fecha y hora</label>
+            <input type="datetime-local" name="nameDatetime" id="idDatetime" />
+
+            <label for="idMonth">Mes:</label>
+            <input type="month" name="nameMonth" id="idMonth" />
+
+            <label for="idWeek">Semana:</label>
+            <input type="week" name="nameWeek" id="idWeek" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Numeros:</legend>
+
+            <label for="idNumber">Numero:</label>
+            <input
+              type="number"
+              name="nameNumber"
+              id="idNumber"
+              min="-10"
+              max="10"
+            />
+
+            <label for="idTel">Telefono:</label>
+            <input
+              type="tel"
+              name="nameTel"
+              id="idTel"
+              readonly="readonly"
+              value="+346666666"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Otros:</legend>
+            <label for="idSearch">Termino de búsqueda</label>
+            <input type="search" name="nameSearch" id="idSearch" />
+
+            <label for="idColor">Color</label>
+            <input type="color" name="nameColor" id="idColor" />
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
